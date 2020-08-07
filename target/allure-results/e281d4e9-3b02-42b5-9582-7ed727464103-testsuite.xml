@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1596037022257" stop="1596037025956" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify invalid login from messenger page</name>
+    <title>Verify invalid login from messenger page</title>
+    <test-cases>
+        <test-case start="1596037022287" stop="1596037022300" status="passed">
+            <name>Given I am on messenger page</name>
+            <title>Given I am on messenger page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Lydias-Air.home"/>
+                <label name="thread" value="1344@Lydias-Air.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1596037023078" stop="1596037023078" status="passed">
+            <name>When I enter lydiakilic@siliconlabs.com into username field on the messenger page</name>
+            <title>When I enter lydiakilic@siliconlabs.com into username field on the messenger page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Lydias-Air.home"/>
+                <label name="thread" value="1344@Lydias-Air.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1596037023212" stop="1596037023212" status="passed">
+            <name>And I enter test123 into password field on the messenger page</name>
+            <title>And I enter test123 into password field on the messenger page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Lydias-Air.home"/>
+                <label name="thread" value="1344@Lydias-Air.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1596037024396" stop="1596037024421" status="broken">
+            <name>And I click on login button on messenger page</name>
+            <title>And I click on login button on messenger page</title>
+            <failure>
+                <message>ElementClickInterceptedException: element click intercepted: Element &lt;button value="1" class="_42ft _4jy0 _3_t3 _2qcm _4jy4 _517h _51sy" id="loginbutton" name="login" tabindex="0" type="submit"&gt;...&lt;/button&gt; is not clickable at point (172, 464). Other element would receive the click: &lt;p class="_90na"&gt;...&lt;/p&gt;
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Lydias-Air.home', ip: 'fd4b:8d38:69ba:1:ed55:e481:71a5:37c6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/z0/96d1vy3j2x1...}, goog:chromeOptions: {debuggerAddress: localhost:50004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4aeae03292e7ba73168c21eb25eea59a</message>
+                <stack-trace>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value="1" class="_42ft _4jy0 _3_t3 _2qcm _4jy4 _517h _51sy" id="loginbutton" name="login" tabindex="0" type="submit"&gt;...&lt;/button&gt; is not clickable at point (172, 464). Other element would receive the click: &lt;p class="_90na"&gt;...&lt;/p&gt;
+  (Session info: chrome=84.0.4147.89)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Lydias-Air.home', ip: 'fd4b:8d38:69ba:1:ed55:e481:71a5:37c6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/z0/96d1vy3j2x1...}, goog:chromeOptions: {debuggerAddress: localhost:50004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4aeae03292e7ba73168c21eb25eea59a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at runnerTest.webPages.ElementUtil.clickOn(ElementUtil.java:49)
+	at runnerTest.webPages.MessengerPage.clickOnSignInButton(MessengerPage.java:26)
+	at stepdefinition.MessengerSD.clickOnLoginButton(MessengerSD.java:37)
+	at ✽.And I click on login button on messenger page(Messenger.feature:11)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Lydias-Air.home"/>
+                <label name="thread" value="1344@Lydias-Air.home.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1596037024429" stop="1596037024430" status="pending">
+            <name>Then I verify invalid login message on sign in page</name>
+            <title>Then I verify invalid login message on sign in page</title>
+            <failure>
+                <message>Test ignored (without reason)!</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Lydias-Air.home"/>
+                <label name="thread" value="1344@Lydias-Air.home.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify invalid login from messenger page"/>
+        <label name="feature" value="Messenger page feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
